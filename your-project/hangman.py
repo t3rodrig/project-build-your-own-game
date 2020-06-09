@@ -19,5 +19,13 @@ def load_words():
     print(f'\t {len(word_list)} words loaded.') 
     return word_list
 
+def choose_word(word_list):
+    '''
+    Returns a word from word_list at random
+    '''
+    return random.choice(word_list)
+
 if __name__ == '__main__':
     word_list = load_words()
+    secret_word = choose_word(word_list).lower()
+    print(secret_word)
