@@ -25,7 +25,20 @@ def choose_word(word_list):
     '''
     return random.choice(word_list)
 
+def is_word_guessed():
+    pass
+
+def get_guessed_word():
+    pass
+
+def get_available_letters():
+    pass
+
+def hangman():
+    pass
+
 if __name__ == '__main__':
-    word_list = load_words()
-    secret_word = choose_word(word_list).lower()
+    #word_list = load_words()
+    #secret_word = choose_word(word_list).lower()
+    secret_word = 'thermodynamics'
     print(secret_word)
