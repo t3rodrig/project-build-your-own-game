@@ -1,0 +1,19 @@
+>>> from hangman import get_guessed_word
+
+>>> get_guessed_word('apple', ['e', 'i', 'k', 'p', 'r', 's'])
+'_ pp_ e'
+
+>>> get_guessed_word('durian', ['a', 'c', 'd', 'h', 'i', 'm', 'n', 'r', 't', 'u'])
+'durian'
+
+>>> get_guessed_word('carrot', ['a', 'o', 'z', 'd', 'u', 'y', 'p', 'h', 'b', 'c'])
+'ca_ _ o_ '
+
+>>> get_guessed_word('grapefruit', ['r', 'w', 'c', 'u', 'x', 'g', 'j', 'e', 'f', 'y'])
+'gr_ _ efru_ _ '
+
+>>> get_guessed_word('carrot', [])
+'_ _ _ _ _ _ '
+
+>>> get_guessed_word('mangosteen', ['c', 'd', 'z', 'p', 't', 'm', 'b', 'x', 'v', 'q'])
+'m_ _ _ _ _ t_ _ _ '

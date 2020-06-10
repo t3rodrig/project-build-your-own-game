@@ -41,8 +41,21 @@ def is_word_guessed(secret_word, letters_guessed):
     is_in = [each_letter in letters_guessed for each_letter in secret_word]
     return all(is_in)
 
-def get_guessed_word():
-    pass
+def get_guessed_word(secret_word, letters_guessed):
+    '''
+    This function returns a string that is comprised of letters and
+    underscores, based on what letters in letters_guessed are in
+    secret_word.
+
+    Args:
+        secret_word (str): the word the user is guessing.
+        letters_guessed ([str]): what letters have been guessed so far.
+
+    Returns:
+        str: letters and underscores.
+    '''
+    list_of_chars = [each_letter if each_letter in letters_guessed else '_ ' for each_letter in secret_word]
+    return ''.join(list_of_chars)
 
 def get_available_letters():
     pass
