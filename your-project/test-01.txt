@@ -1,0 +1,19 @@
+>>> from hangman import is_word_guessed
+
+>>> is_word_guessed('apple', ['a', 'e', 'i', 'k', 'p', 'r', 's'])
+False
+
+>>> is_word_guessed('durian', ['h', 'a', 'c', 'd', 'i', 'm', 'n', 'r', 't', 'u'])
+True
+
+>>> is_word_guessed('coconut', ['w', 'i', 'c', 'o', 'e', 'f', 'z', 'p', 'v', 'q'])
+False
+
+>>> is_word_guessed('grapefruit', ['p', 'j', 's', 'n', 'q', 'z', 'x', 'r', 'g', 'y'])
+False
+
+>>> is_word_guessed('broccoli', [])
+False
+
+>>> is_word_guessed('banana', ['z', 'x', 'q', 'b', 'a', 'n', 'a', 'n', 'a'])
+True

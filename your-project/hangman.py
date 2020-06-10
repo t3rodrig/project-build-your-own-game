@@ -25,8 +25,21 @@ def choose_word(word_list):
     '''
     return random.choice(word_list)
 
-def is_word_guessed():
-    pass
+def is_word_guessed(secret_word, letters_guessed):
+    '''
+    This function returns True if secret_word has been guessed 
+    (ie, all the letters of secret_word are in letters_guessed)
+    and False otherwise.
+
+    Args:
+        secret_word (str): the word the user is guessing.
+        letters_guessed ([str]): what letters have been guessed so far.
+
+    Returns:
+        bool: True for success, False otherwise.
+    '''
+    is_in = [each_letter in letters_guessed for each_letter in secret_word]
+    return all(is_in)
 
 def get_guessed_word():
     pass
