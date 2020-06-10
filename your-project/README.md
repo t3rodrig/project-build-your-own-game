@@ -1,36 +1,24 @@
 <img src="https://bit.ly/2VnXWr2" alt="Ironhack Logo" width="100"/>
 
-# Title of My Project
-*[Your Name]*
+# Hangman Game
+*Tonalli R.*
 
-*[Your Cohort, Campus & Date]*
+*DAPT March 2020, CDMX*
 
 ## Content
 - [Project Description](#project-description)
-- [Workflow](#workflow)
-- [Organization](#organization)
 - [Links](#links)
 
 <a name="project-description"></a>
 
 ## Project Description
-Write a short description of your project. Write 1-2 sentences about what what you chose to build and why. 
+This game is a variation of the classic wordgame [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)). In this game, the second player is always  the computer, who picks a word at random.
 
-<a name="workflow"></a>
-
-## Workflow
-Outline the workflow you used in your project. What were the steps you went through?
-
-<a name="organization"></a>
-
-## Organization
-How did you organize yourself? Did you use any tools?
+The name of the file to run is: `hangman.py`
 
 <a name="links"></a>
 
 ## Links
-Include the links to your repository, slides and trello. Feel free to include any other links associated to your project. 
 
-[Repository](https://github.com/)  
+[Repository](https://github.com/t3rodrig/project-build-your-own-game)  
 [Slides](https://slides.com/)  
-[Trello](https://trello.com/en)  
