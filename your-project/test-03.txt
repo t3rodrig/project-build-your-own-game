@@ -1,0 +1,19 @@
+>>> from hangman import get_available_letters
+
+>>> get_available_letters(['e', 'i', 'k', 'p', 'r', 's'])
+'abcdfghjlmnoqtuvwxyz'
+
+>>> get_available_letters([])
+'abcdefghijklmnopqrstuvwxyz'
+
+>>> get_available_letters(['k', 'm', 'u', 'n', 'w'])
+'abcdefghijlopqrstvxyz'
+
+>>> get_available_letters(['p', 'a', 't', 'o', 'h', 'm', 'l', 'c', 'x', 'v'])
+'bdefgijknqrsuwyz'
+
+>>> get_available_letters(['c', 'h', 'q', 'a', 'n', 'd', 'z'])
+'befgijklmoprstuvwxy'
+
+>>> get_available_letters(['s', 'x', 'i', 'b', 'g', 't', 'm', 'z', 'a', 'c', 'n'])
+'defhjklopqruvwy'

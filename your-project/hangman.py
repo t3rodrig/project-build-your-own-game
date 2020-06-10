@@ -57,8 +57,21 @@ def get_guessed_word(secret_word, letters_guessed):
     list_of_chars = [each_letter if each_letter in letters_guessed else '_ ' for each_letter in secret_word]
     return ''.join(list_of_chars)
 
-def get_available_letters():
-    pass
+def get_available_letters(letters_guessed):
+    '''
+     This function returns all lowercase English letters that are
+     not in letters_guessed.
+
+     Args:
+        letters_guessed ([str]): what letters have been guessed so far.
+
+    Returns:
+        str: lowercase English letters.
+    '''
+    from string import ascii_lowercase
+    available = list(set(ascii_lowercase) - set(letters_guessed))
+    available = sorted(available)
+    return ''.join(available)
 
 def hangman():
     pass
